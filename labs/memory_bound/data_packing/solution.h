@@ -19,7 +19,6 @@ struct S {
 
 template <int N>
 class TD;
-
 //TD<sizeof(S)> td;
 
 void init(std::array<S, N> &arr);
