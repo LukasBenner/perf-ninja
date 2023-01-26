@@ -25,7 +25,7 @@ Every lab can be built and ran using the following commands:
 ```
 cmake -E make_directory build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
 cmake --build . --config Release --parallel 8
 cmake --build . --config=Release --target validateLab
 cmake --build . --config=Release --target benchmarkLab
